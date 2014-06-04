@@ -128,14 +128,14 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
 
 	// If offset, calculate appropriate margins
 	@if $offset { 
-		margin-left: #{$offset}% !important; 
+		margin-left: #{perc($offset)} !important; 
 	}
 }
 
 
 // Create presentational classes for grid
 //
-// $size - Name of class to use, i.e. "large" will generate .large-1, .large-2, etc.
+// $size - Name of class to use, i.e. "l" will generate .l-1, .l-2, etc.
 @mixin grid-html-classes($size) {
 
 	@for $i from 0 through 99 {
