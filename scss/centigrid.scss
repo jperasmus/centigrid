@@ -8,6 +8,21 @@ $base-font-size: 16;
 	@return ($value) * 1%;
 }
 
+// The following two functions are needed for the grid to work in foundation 4
+@function lower-bound($range){
+	@if length($range) <= 0 {
+		@return 0;
+	}
+	@return nth($range,1);
+}
+
+@function upper-bound($range) {
+	@if length($range) < 2 {
+		@return 999999999999;
+	}
+	@return nth($range, 2);
+}
+
 // Variables
 // $include-xs-grid: false !default;
 $include-s-grid: true !default;
