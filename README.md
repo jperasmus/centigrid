@@ -3,7 +3,7 @@ centigrid
 
 This is a very basic responsive grid using percentages instead of default columns. The grid is more for personal use, but if it could help someone, go ahead and use it. It is based on Zurb's Foundation 5 grid, so most credit should go to them.
 
-Currently the grid is not compatible with Foundation 4, but it can be updated to work with F4 if needed. Send me a message if needed.
+The grid has been updated to be compatible with Foundation 4 as well.
 
 - Horizontal rows can be created using the class "row".
 - Vertical columns can be created using the class "col" together with the different breakpoint class. 
