@@ -16,18 +16,18 @@ Usage:
 * Horizontal rows can be created using the class "**row**".
 * Vertical columns can be created using the class "**col**" together with the different breakpoint class. 
 
-h5. This is better explained with an illustration:
+This is better explained with an illustration:
 To create a column of 73% on a small screen and 56% on a medium screen, you will use **&lt;div class="s-73 m-56 col"&gt;&lt;/div&gt;**
 
 Since it is based on the Foundation grid, it is mobile first, so for our previous example large and bigger screens will automatically inherit the 56% grid from the medium class specified.
 
-h3. Other classes include:
+Other classes include:
 
 * Offset: 	eg. s-offset-35
 * Push:		eg. m-push-28
 * Pull:		eg. l-pull-3
 
-h3. Special classes:
+Special classes:
 
 To cater for thirds and sixths, which would need decimal percentages, special classes have been included as follows:
 
@@ -35,7 +35,7 @@ To cater for thirds and sixths, which would need decimal percentages, special cl
 
 Offsets, pushes and pulls can also be done using these special classes, for instance: **m-offset-1-3rd** to offset on medium devices with one third (33.3333%).
 
-h5. Currently, the only special classes included is:
+Currently, the only special classes included is:
 - One third (**-1-3rd**)
 - Two thirds (**-2-3rds**)
 - One sixth (**-1-6th**)
