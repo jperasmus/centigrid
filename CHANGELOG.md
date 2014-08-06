@@ -1,3 +1,6 @@
+Fixed issue with column padding
+*05 Aug 2014*
+
 Added special classes for 1-3rd, 2-3rds, 1-6th & 5-6ths …
 *05 Aug 2014*
 

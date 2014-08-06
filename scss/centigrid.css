@@ -1,7 +1,7 @@
 .row {
   width: 100%;
   margin: 0 auto;
-  max-width: em(1000); }
+  max-width: 62.5em; }
   .row.flat > .col {
     padding-left: 0;
     padding-right: 0; }
@@ -9,8 +9,8 @@
     margin-left: 0;
     margin-right: 0; }
   .row .row {
-    margin-left: -em(30)/2;
-    margin-right: -em(30)/2;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
     width: auto;
     max-width: none; }
     .row .row.flat {
@@ -18,8 +18,8 @@
       margin-bottom: 0; }
 
 .col {
-  padding-left: em(30)/2;
-  padding-right: em(30)/2;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
   width: 100%;
   float: left; }
 
@@ -1066,8 +1066,8 @@
 
   .col {
     position: relative;
-    padding-left: em(30)/2;
-    padding-right: em(30)/2;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
     float: left; }
 
   .s-1 {
@@ -2763,8 +2763,8 @@
 
   .col {
     position: relative;
-    padding-left: em(30)/2;
-    padding-right: em(30)/2;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
     float: left; }
 
   .m-1 {
@@ -4460,8 +4460,8 @@
 
   .col {
     position: relative;
-    padding-left: em(30)/2;
-    padding-right: em(30)/2;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
     float: left; }
 
   .l-1 {

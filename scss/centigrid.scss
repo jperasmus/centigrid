@@ -1,6 +1,4 @@
 $base-font-size: 16;
-$row-width: em(1000) !default;
-$gutter: em(30) !default;
 
 @function em($target, $context: $base-font-size) {
 	@return ($target / $context) * 1em;
@@ -9,6 +7,9 @@ $gutter: em(30) !default;
 @function perc($value) {
 	@return ($value) * 1%;
 }
+
+$row-width: em(1000) !default;
+$gutter: em(30) !default;
 
 // The following two functions are needed for the grid to work in foundation 4
 @function lower-bound($range){
