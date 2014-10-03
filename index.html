@@ -1,0 +1,114 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Centigrid</title>
+  <meta name="description" content="Very basic responsive grid using percentages instead of default columns">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Centigrid</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Very basic responsive grid using percentages instead of default columns</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/jperasmus/centigrid/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/jperasmus/centigrid/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/jperasmus/centigrid" class="code">View Centigrid on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a name="centigrid" class="anchor" href="#centigrid"><span class="octicon octicon-link"></span></a>centigrid</h1>
+
+<p>Centigrid is a very basic responsive grid using percentage widths instead of default columns like other grids based on the original 980 grid. The grid is more for personal use to solve my frustrations with more complex grid layouts, but if it could help someone, go ahead and use it. Centigrid is based on <a href="http://foundation.zurb.com/docs/components/grid.html">Zurb's Foundation 5 grid</a>, so most credit should go to them.</p>
+
+<p>Even though the grid is based on Foundaiton 5, it has been updated to be compatible with Foundation 4 as well.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation:</h2>
+
+<p>Simply add/include the <em>centigrid.css</em> or <em>centigrid.scss</em> stylesheet to your project/site.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage:</h2>
+
+<ul>
+<li>Horizontal rows can be created using the class "<strong>row</strong>".</li>
+<li>Vertical columns can be created using the class "<strong>col</strong>" together with the different breakpoint class. </li>
+</ul><p>This is better explained with an illustration:
+To create a column of 73% on a small screen and 56% on a medium screen, you will use <strong>&lt;div class="s-73 m-56 col"&gt;&lt;/div&gt;</strong></p>
+
+<p>Since it is based on the Foundation grid, it is mobile first, so for our previous example large and bigger screens will automatically inherit the 56% grid from the medium class specified.</p>
+
+<p>Other classes include:</p>
+
+<ul>
+<li>Offset:   eg. s-offset-35</li>
+<li>Push:     eg. m-push-28</li>
+<li>Pull:     eg. l-pull-3</li>
+</ul><p>Special classes:</p>
+
+<p>To cater for thirds and sixths, which would need decimal percentages, special classes have been included as follows:</p>
+
+<ul>
+<li>Normal column:    eg. <strong>s-1-3rd</strong>, <strong>m-2-3rds</strong>, <strong>s-1-6th</strong>, <strong>l-5-6ths</strong>
+</li>
+</ul><p>Offsets, pushes and pulls can also be done using these special classes, for instance: <strong>m-offset-1-3rd</strong> to offset on medium devices with one third (33.3333%).</p>
+
+<p>Currently, the only special classes included is:</p>
+
+<ul>
+<li>One third (<strong>-1-3rd</strong>)</li>
+<li>Two thirds (<strong>-2-3rds</strong>)</li>
+<li>One sixth (<strong>-1-6th</strong>)</li>
+<li>Five sixths (<strong>-5-6ths</strong>)</li>
+</ul><p>Most other widths can be achieved using normal percentages. If you need any other specific classes, feel free to let me know or extend it yourself.</p>
+
+<p>To <em>collapse</em> a given row, a.k.a. remove the gutter padding, you can use the class "<strong>flat</strong>".</p>
+
+<h2>
+<a name="settings" class="anchor" href="#settings"><span class="octicon octicon-link"></span></a>Settings:</h2>
+
+<p>In the scss file you can specify a number of variables, which include the row width, the default gutter between columns and the breakpoints for the different sizes. You can also decide whether you want to include grid classes for xs (extra small), xl (extra large) and xxl (double extra large). Small, medium and large are included by default.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/jperasmus" class="avatar"><img src="https://avatars0.githubusercontent.com/u/6787452?v=2&amp;s=60" width="48" height="48"></a> <a href="https://github.com/jperasmus">jperasmus</a> maintains <a href="https://github.com/jperasmus/centigrid">Centigrid</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/jperasmus/centigrid/tarball/master" class="tar">tar</a><a href="https://github.com/jperasmus/centigrid/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
