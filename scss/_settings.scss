@@ -1,0 +1,69 @@
+$base-font-size: 16;
+
+@function em($target, $context: $base-font-size) {
+	@return ($target / $context) * 1em;
+}
+
+@function perc($value) {
+	@return ($value) * 1%;
+}
+
+$row-width: em(1000) !default;
+$gutter: em(30) !default;
+// Only values between 1 and 100
+$active_columns: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100) !default;
+$include_special_columns: true !default;
+
+// The following two functions are needed for the grid to work in foundation 4
+@function lower-bound($range){
+	@if length($range) <= 0 {
+		@return 0;
+	}
+	@return nth($range,1);
+}
+
+@function upper-bound($range) {
+	@if length($range) < 2 {
+		@return 999999999999;
+	}
+	@return nth($range, 2);
+}
+
+// Variables
+$include-xs-grid: false !default;
+$include-s-grid: true !default;
+$include-m-grid: true !default;
+$include-l-grid: true !default;
+$include-xl-grid: false !default;
+$include-xxl-grid: false !default;
+
+// Media Query Ranges
+$xsmall-range: (em(0), em(320)) !default;
+$small-range: (em(0), em(640)) !default;
+$medium-range: (em(641), em(1024)) !default;
+$large-range: (em(1025), em(1440)) !default;
+$xlarge-range: (em(1441), em(1920)) !default;
+$xxlarge-range: (em(1921), em(9999999)) !default;
+
+$screen: "only screen" !default;
+
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+$xsmall-up: $screen !default;
+$xsmall-only: "#{$screen} and (max-width: #{upper-bound($xsmall-range)})" !default;
+
+$small-up: $screen !default;
+$small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})" !default;
+
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})" !default;
+$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})" !default;
+
+$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})" !default;
+$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})" !default;
+
+$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})" !default;
+$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})" !default;
+
+$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})" !default;
+$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})" !default;
