@@ -14,8 +14,8 @@
     width: auto;
     max-width: none; }
     .row .row.flat {
-      margin-top: 0;
-      margin-bottom: 0; }
+      margin-left: 0;
+      margin-right: 0; }
 
 .col {
   padding-left: 0.9375em;
@@ -5114,3 +5114,5 @@
 
   .col.l-uncentered.opposite {
     float: right; } }
+
+/*# sourceMappingURL=centigrid.css.map */

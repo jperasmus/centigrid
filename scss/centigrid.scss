@@ -1,4 +1,4 @@
-@import 'settings';
+@import 'centigrid-settings';
 
 // Creates a column, should be used inside of a media query to control layouts
 //
@@ -238,8 +238,8 @@
 		max-width: none;
 
 		&.flat {
-			margin-top: 0;
-			margin-bottom: 0;
+			margin-left: 0;
+			margin-right: 0;
 		}
 	}
 }
