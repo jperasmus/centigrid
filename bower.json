@@ -1,0 +1,25 @@
+{
+  "name": "centigrid",
+  "version": "1.0.0",
+  "homepage": "http://jperasmus.github.io/centigrid/",
+  "authors": [
+    "JP Erasmus <jperasmus11@gmail.com>"
+  ],
+  "description": "Centigrid is a very basic responsive grid using percentage widths instead of default columns like other grids based on the original 980 grid. Centigrid is based on the Foundation 5 grid.",
+  "main": "/scss/centigrid.scss, /scss/_centigrid-settings.scss",
+  "keywords": [
+    "responsive",
+    "grid",
+    "foundation",
+    "percentage",
+    "percent"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
